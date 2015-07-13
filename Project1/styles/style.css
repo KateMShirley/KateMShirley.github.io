@@ -1,0 +1,121 @@
+body {
+  font-family: "Calibri", "Arial", sans-serif;
+  margin: 0px;
+  font-size: 24px;
+  text-align: center;
+}
+#wrapper {
+  width: 90%;
+  margin: 15px auto;
+}
+header {
+  border: 3px;
+  background-color: rgba(231, 76, 60, 1);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  position: relative;
+  height: 100px;
+}
+nav {
+  border: 3px;
+  background-color: rgba(230, 126, 34, 1);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  position: relative;
+  height: 70px;
+
+}
+
+section {
+  border: 3px;
+  background-color: rgba(155, 89, 182, 1);
+  width: 47%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  position: relative;
+  float: left;
+  height: 400px;
+}
+aside {
+  border: 3px;
+  background-color: rgba(155, 89, 182, 1);
+  width: 47%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  position: relative;
+  float: right;
+  height: 400px;
+}
+
+
+#left {
+  border: 3px;
+  background-color: rgba(230, 126, 34, 1);
+  width: 31%;
+  margin-left: auto;
+  margin-bottom: 20px;
+  margin-right:4%;
+  float: left;
+  height: 200px
+}
+
+#center {
+  border: 3px;
+  background-color: rgba(230, 126, 34, 1);
+  width: 31%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  float: left;
+  height: 200px;
+}
+
+#right {
+  border: 3px;
+  background-color: rgba(230, 126, 34, 1);
+  width: 31%;
+  margin-left: 3%;
+  margin-right: auto;
+  margin-bottom: 20px;
+  float: right;
+  height: 200px;
+}
+footer {
+  clear: both;
+  border: 3px;
+  background-color: rgba(231, 76, 60, 1);
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+}
+/* create a side-to-side line */
+.menu ul {
+  padding: 0px;
+}
+.menu li {
+  display: inline-block;
+  list-style: none;
+}
+
+
+input {
+  border-radius: 3px;
+}
+
+button {
+  border-radius: 3px;
+  background-color: white;
+  color: black;
+}
+
+li {
+  text-align: left;
+  size: 18px;
+
+}
