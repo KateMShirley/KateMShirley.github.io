@@ -1,3 +1,82 @@
+@import 'variables.scss';
+
+//taget the DOM
+body {
+  font-size: $base-page-size;
+  background: $background-color;
+}
+
+h1 {
+  font-family: 'Oswald'
+}
+
+#wrapper {
+  width: $wrapper-phone;
+  border-radius: $radius;
+  margin: auto;
+  background: $background-color;
+  padding: $font-size-standard;
+}
+
+// //display
+// #phone {
+//   display: none;
+//   background: purple;
+// }
+//
+// #tablet {
+//   display: none;
+//   background: orange;
+// }
+// #laptop {
+//   display: none;
+//   background: lime;
+// }
+
+//media queries for resposive design
+@media (min-width: $device-phone) {
+  #wrapper {
+    width: $wrapper-phone;
+  }
+  #phone {
+    display: block;
+  }
+}
+
+@media (min-width: $device-tablet) {
+  #wrapper {
+    width: $wrapper-tablet;
+  }
+  #phone{
+    display: none;
+  }
+  #tablet {
+    display: block;
+  }
+  .nav-item {
+    display: inline-block;
+    list-style: square;
+    padding: $font-size-standard;
+  }
+}
+
+@media (min-width: $device-laptop) {
+  #wrapper {
+    width: $wrapper-laptop;
+  }
+  #phone{
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #laptop{
+    display: block;
+  }
+}
+
+
+
 
 
 
@@ -37,21 +116,6 @@ h4 {
 p{
   font-family:'Arvo', serif;
   font-size: 18px;
-  color: rgba(100,100,100,1)
-}
-
-.page{
-  width:99%;
-  margin: 0 auto;
-  background-color: rgba(245,245,245,1);
-
-}
-
-.wrapper{
-  width:95%;
-  margin: 0 auto;
-  padding: 2%;
-  background-color: rgba(245,245,245,1);
 }
 
 
