@@ -130,49 +130,4 @@ p {
   width: 0;
   border-top: 72.17px solid; }
 
-#citron {
-  background-color: #e7fd1d;
-  margin-right: 30px;
-  float: left;
-  margin-right: 30px; }
-
-#citron:before {
-  border-bottom: 72.17px solid #e7fd1d; }
-
-#citron:after {
-  border-top: 72.17px solid #e7fd1d; }
-
-#cherry {
-  background-color: #ff231d;
-  float: left;
-  margin-right: 30px; }
-
-#cherry:before {
-  border-bottom: 72.17px solid #ff231d; }
-
-#cherry:after {
-  border-top: 72.17px solid #ff231d; }
-
-#turquoise {
-  background-color: #7deee6;
-  float: left;
-  margin-right: 30px; }
-
-#turquoise:before {
-  border-bottom: 72.17px solid #7deee6; }
-
-#turquoise:after {
-  border-top: 72.17px solid #7deee6; }
-
-#grey {
-  background-color: #c0c3ba;
-  float: left;
-  margin-right: 30px; }
-
-#grey:before {
-  border-bottom: 72.17px solid #c0c3ba; }
-
-#grey:after {
-  border-top: 72.17px solid #c0c3ba; }
-
 /*# sourceMappingURL=styles.css.map */
