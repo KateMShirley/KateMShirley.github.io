@@ -12,6 +12,7 @@ h1 {
   font-size: $font-size-headline;
   font-weight: 400;
   color: $header-color;
+  line-height: 50%;
 }
 
 h2 {
@@ -26,6 +27,10 @@ h3 {
   font-size: $font-size-byline;
   font-weight: 400;
   color: $header-color
+}
+
+a {
+  color: $header-color;
 }
 
 #wrapper {
@@ -75,7 +80,15 @@ header {
   display:inline-block;
   margin: 0 auto;
 }
-
+#about {
+  background-color: $cherry;
+  width:$wrapper-phone;
+  padding: $font-size-standard;
+}
+#bio {
+  font-family: 'Arvo', serif;
+  color: white;
+}
 // #logoName {
 //   display: inline-block;
 //   margin-left
@@ -278,10 +291,7 @@ header {
 	border-left: 2em solid transparent;
 }
 
-#about {
-  background-color: $cherry;
-  height: 200px;
-}
+
 
 
 // .hexagon {
