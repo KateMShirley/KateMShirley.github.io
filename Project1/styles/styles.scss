@@ -7,12 +7,37 @@ body {
 }
 
 h1 {
-  font-family: 'Oswald'
+  font-family: 'Oswald', sans-serif;
+  font-size: $font-size-headline;
+  font-weight: 400;
+  color: $header-color;
 }
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: $font-size-nav;
+  font-weight: 300;
+  color: $header-color
+}
+
+.logo {
+  font-family: 'Oswald', sans-serif;
+  font-size: $font-size-logo;
+  font-weight: 400;
+  color: $header-color
+}
+.nav {
+  border-bottom: 2px solid black;
+}
+.navLink {
+  display: inline-block;
+
+}
+
 
 #wrapper {
   width: $wrapper-phone;
-  border-radius: $radius;
+  //border-radius: $radius;
   margin: auto;
   background: $background-color;
   padding: $font-size-standard;
@@ -53,7 +78,7 @@ h1 {
   #tablet {
     display: block;
   }
-  .nav-item {
+  .nav- {
     display: inline-block;
     list-style: square;
     padding: $font-size-standard;

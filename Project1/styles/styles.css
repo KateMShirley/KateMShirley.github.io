@@ -1,70 +1,187 @@
-/*
-Error: Undefined variable: "$radius".
-        on line 15 of ./styles.scss
+body {
+  font-size: 18px;
+  background: whitesmoke; }
 
-10:   font-family: 'Oswald'
-11: }
-12: 
-13: #wrapper {
-14:   width: $wrapper-phone;
-15:   border-radius: $radius;
-16:   margin: auto;
-17:   background: $background-color;
-18:   padding: $font-size-standard;
-19: }
-20: 
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  color: black; }
 
-Backtrace:
-./styles.scss:15
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/script/tree/node.rb:50:in `perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:430:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/engine.rb:295:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$radius\".\A         on line 15 of ./styles.scss\A \A 10:   font-family: 'Oswald'\A 11: }\A 12: \A 13: #wrapper {\A 14:   width: $wrapper-phone;\A 15:   border-radius: $radius;\A 16:   margin: auto;\A 17:   background: $background-color;\A 18:   padding: $font-size-standard;\A 19: }\A 20: "; }
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: black; }
+
+.logo {
+  font-family: 'Oswald', sans-serif;
+  font-size: 6rem;
+  font-weight: 400;
+  color: black; }
+
+.nav {
+  border-bottom: 2px solid black; }
+
+.navLink {
+  display: inline-block; }
+
+#wrapper {
+  width: 85%;
+  margin: auto;
+  background: whitesmoke;
+  padding: 1rem; }
+
+@media (min-width: 320px) {
+  #wrapper {
+    width: 85%; }
+
+  #phone {
+    display: block; } }
+@media (min-width: 700px) {
+  #wrapper {
+    width: 90%; }
+
+  #phone {
+    display: none; }
+
+  #tablet {
+    display: block; }
+
+  .nav- {
+    display: inline-block;
+    list-style: square;
+    padding: 1rem; } }
+@media (min-width: 1200px) {
+  #wrapper {
+    width: 1100px; }
+
+  #phone {
+    display: none; }
+
+  #tablet {
+    display: none; }
+
+  #laptop {
+    display: block; } }
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  line-height: 50%;
+  font-size: 60px;
+  color: black; }
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  line-height: 50%;
+  font-size: 40px;
+  color: black; }
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  line-height: 50%;
+  font-size: 30px;
+  color: black; }
+
+h4 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  line-height: 50%;
+  font-size: 20px;
+  color: black; }
+
+p {
+  font-family: 'Arvo', serif;
+  font-size: 18px; }
+
+.honeycombs {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  text-align: center; }
+
+.honeycombs .inner_span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #f7cd07;
+  font-family: sans-serif;
+  color: #000; }
+
+.honeycombs .inner-text {
+  padding-top: 30%; }
+
+.honeycombs .honeycombs-inner-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  width: 700px;
+  position: relative;
+  height: 1200px; }
+
+.honeycombs .comb {
+  position: absolute;
+  display: inline-block; }
+
+.honeycombs .hex_l,
+.honeycombs .hex_r {
+  overflow: hidden;
+  position: absolute;
+  /* -webkit-backface-visibility: hidden; */ }
+
+.honeycombs .hex_l {
+  visibility: hidden;
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg); }
+
+.honeycombs .hex_r {
+  visibility: hidden;
+  -moz-transform: rotate(-120deg);
+  -ms-transform: rotate(-120deg);
+  -o-transform: rotate(-120deg);
+  -webkit-transform: rotate(-120deg);
+  transform: rotate(-120deg); }
+
+.honeycombs .hex_inner {
+  display: block;
+  visibility: visible;
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  cursor: pointer; }
+
+.hexagon {
+  position: relative;
+  width: 250px;
+  height: 144.34px;
+  margin: 72.17px 0; }
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent; }
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 72.17px solid; }
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 72.17px solid; }
+
+/*# sourceMappingURL=styles.css.map */
