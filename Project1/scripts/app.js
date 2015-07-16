@@ -2,7 +2,7 @@
 $(document).ready(function(event){
   console.log("all things are loaded...thanks, yayQuery!");
   $('.honeycombs').honeycombs({
-      combWidth: 200,
+      combWidth: 180,
       margin: 10
 });
 });
@@ -19,8 +19,8 @@ $(document).ready(function(event){
 
           // Establish our default settings
           var settings = $.extend({
-              combWidth: 200,
-              margin: 10
+              combWidth: 250,
+              margin: 15,
           }, options);
 
           function initialise(element) {
@@ -167,7 +167,7 @@ $(document).ready(function(event){
 var app=app || {};
 app.getRequest = {
   type: 'get',
-  url: 'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=ShirleyIsSaying&count=1&status=test&in_reply_to=cs480test2&oauth_version=1.0&oauth_nonce=a73afdcceeb493853581e64f5801c951&oauth_timestamp=1411668337&oauth_consumer_key=lr7QWBCgG3YFzeSp0nMwPTATB&oauth_token=3330109984-HVE8nBnnKgyaKp5gjYpz1zfcIvR3iuksPzsTpQA&oauth_signature_method=HMAC-SHA1&oauth_signature=sd%2FkG89XLjyNCbcYDqgqG6gkIH0%3D',
+  url: 'https://api.twitter.com/1.1/statuses/user_timeline.json?status=test&in_reply_to=cs480test2&oauth_version=1.0&oauth_nonce=a73afdcceeb493853581e64f5801c951&oauth_timestamp=1411668337&oauth_consumer_key=lr7QWBCgG3YFzeSp0nMwPTATB&oauth_token=3330109984-HVE8nBnnKgyaKp5gjYpz1zfcIvR3iuksPzsTpQA&oauth_signature_method=HMAC-SHA1&oauth_signature=sd%2FkG89XLjyNCbcYDqgqG6gkIH0%3D&screen_name=ShirleyIsSaying&count=1',
   //url: 'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=ShirleyIsSaying&count=1',
   dataType: 'jsonp',
   // data: {
