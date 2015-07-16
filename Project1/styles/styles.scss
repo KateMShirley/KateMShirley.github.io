@@ -35,6 +35,10 @@ h3 {
   padding: $font-size-standard;
 }
 
+header {
+  position: relative;
+  margin: 0, auto;
+}
 
 //Nav Styling
 
@@ -82,7 +86,7 @@ h3 {
 
 
 
-
+//Honeycombs with color
 
 
 
@@ -160,15 +164,16 @@ h3 {
 	width: 100%;
 	text-align: center;
   background-color: $background-color;
+  margin-top: $font-size-nav
 }
 
 .honeycombs .inner_span{
 	display: block;
 	height: 100%;
 	width: 100%;
-	background-color: #f7cd07;
-	font-family: sans-serif;
-	color: #000;
+	background-color: $cherry;
+	font-family: 'Oswald', sans-serif;
+	color: $header-color;
 }
 .honeycombs .inner-text{
 	padding-top: 30%;

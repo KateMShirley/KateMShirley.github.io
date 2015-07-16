@@ -26,6 +26,10 @@ h3 {
   margin: auto;
   padding: 1rem; }
 
+header {
+  position: relative;
+  margin: 0, auto; }
+
 #navLeft {
   position: relative;
   float: left;
@@ -90,15 +94,16 @@ h3 {
   overflow: hidden;
   width: 100%;
   text-align: center;
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+  margin-top: 2rem; }
 
 .honeycombs .inner_span {
   display: block;
   height: 100%;
   width: 100%;
-  background-color: #f7cd07;
-  font-family: sans-serif;
-  color: #000; }
+  background-color: #ff231d;
+  font-family: 'Oswald', sans-serif;
+  color: black; }
 
 .honeycombs .inner-text {
   padding-top: 30%; }

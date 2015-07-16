@@ -2,7 +2,7 @@
 $(document).ready(function(event){
   console.log("all things are loaded...thanks, yayQuery!");
   $('.honeycombs').honeycombs({
-      combWidth: 250,
+      combWidth: 200,
       margin: 10
 });
 });
@@ -10,7 +10,7 @@ $(document).ready(function(event){
 
 
 
-  
+
   //honeycomb functionality
 
   (function($) {
@@ -19,7 +19,7 @@ $(document).ready(function(event){
 
           // Establish our default settings
           var settings = $.extend({
-              combWidth: 250,
+              combWidth: 200,
               margin: 10
           }, options);
 
