@@ -23,8 +23,7 @@ h3 {
 #wrapper {
   background-color: whitesmoke;
   width: 95%;
-  margin: auto;
-  padding: 1rem; }
+  margin: auto; }
 
 header {
   position: relative;
@@ -46,9 +45,9 @@ header {
   border-bottom: 2px solid black; }
 
 #logoContain {
-  display: inline-flex;
-  margin: 0 auto;
-  text-align: center; }
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto; }
 
 .logo {
   font-family: 'Oswald', sans-serif;
@@ -58,50 +57,22 @@ header {
   display: inline-block;
   margin: 0 auto; }
 
-#logoName {
-  display: inline-block;
-  margin: 0 auto; }
-
-@media (min-width: 320px) {
-  #wrapper {
-    width: 95%; }
-
-  #phone {
-    display: block; } }
-@media (min-width: 700px) {
-  #wrapper {
-    width: 95%; }
-
-  #phone {
-    display: none; }
-
-  #tablet {
-    display: block; } }
-@media (min-width: 960px) {
-  #wrapper {
-    width: 95%; }
-
-  #phone {
-    display: none; }
-
-  #tablet {
-    display: none; }
-
-  #laptop {
-    display: block; } }
 .honeycombs {
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 80%;
   text-align: center;
   background-color: whitesmoke;
-  margin-top: 2rem; }
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 6rem; }
 
 .honeycombs .inner_span {
   display: block;
   height: 100%;
   width: 100%;
-  background-color: #ff231d;
+  background-color: #e7fd1d;
   font-family: 'Oswald', sans-serif;
   color: black; }
 
@@ -155,5 +126,37 @@ header {
   -o-background-size: cover;
   background-size: cover;
   cursor: pointer; }
+
+.notched-box {
+  position: relative;
+  width: 100%;
+  height: 0px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  background-color: whitesmoke;
+  overflow: hidden; }
+
+.notched-box:before,
+.notched-box:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  height: 0;
+  width: 50%;
+  border-bottom: 1.5em solid #ff231d;
+  box-sizing: border-box; }
+
+.notched-box:before {
+  left: 0;
+  border-right: 2em solid transparent; }
+
+.notched-box:after {
+  right: 0;
+  border-left: 2em solid transparent; }
+
+#about {
+  background-color: #ff231d;
+  height: 200px; }
 
 /*# sourceMappingURL=styles.css.map */

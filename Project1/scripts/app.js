@@ -137,7 +137,7 @@ $(document).ready(function(event){
                   reorder(true);
               });
 
-              $(element).find('.comb').mouseenter(function(){
+              $(element).find('.mouse').mouseenter(function(){
                   $(this).find('.inner_span').stop(true, true);
                   $(this).find('.inner_span').fadeIn();
               });
@@ -161,6 +161,30 @@ $(document).ready(function(event){
 
 //End Honeycomb
 
+
+
+//Ajax Practice
+var app=app || {};
+app.getRequest = {
+  type: 'get',
+  url: 'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=ShirleyIsSaying&count=1&status=test&in_reply_to=cs480test2&oauth_version=1.0&oauth_nonce=a73afdcceeb493853581e64f5801c951&oauth_timestamp=1411668337&oauth_consumer_key=lr7QWBCgG3YFzeSp0nMwPTATB&oauth_token=3330109984-HVE8nBnnKgyaKp5gjYpz1zfcIvR3iuksPzsTpQA&oauth_signature_method=HMAC-SHA1&oauth_signature=sd%2FkG89XLjyNCbcYDqgqG6gkIH0%3D',
+  //url: 'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=ShirleyIsSaying&count=1',
+  dataType: 'jsonp',
+  // data: {
+  //   screen_name: 'ShirleyIsSaying',
+  //   count: 1,
+  // },
+  success: function(data) {
+    console.log(data);
+  },
+  error: function(error) {
+    console.log(error);
+  }
+};
+
+$.ajax(app.getRequest);
+
+$.getJSON
 
 
 

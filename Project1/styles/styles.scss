@@ -31,9 +31,7 @@ h3 {
 #wrapper {
   background-color: $background-color;
   width: $wrapper-phone;
-  margin: auto;
-  padding: $font-size-standard;
-}
+  margin: auto;}
 
 header {
   position: relative;
@@ -63,9 +61,10 @@ header {
 //Logo Styling
 
 #logoContain{
-  display: inline-flex;
-  margin: 0 auto;
-  text-align: center;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .logo {
@@ -77,11 +76,11 @@ header {
   margin: 0 auto;
 }
 
-#logoName {
-  display: inline-block;
-  margin: 0 auto;
+// #logoName {
+//   display: inline-block;
+//   margin-left
 
-}
+
 
 
 
@@ -112,46 +111,46 @@ header {
 // }
 
 //media queries for resposive design
-@media (min-width: $device-phone) {
-  #wrapper {
-    width: $wrapper-phone;
-  }
-  #phone {
-    display: block;
-  }
-}
-
-@media (min-width: $device-tablet) {
-  #wrapper {
-    width: $wrapper-tablet;
-  }
-  #phone{
-    display: none;
-  }
-  #tablet {
-    display: block;
-  }
-  // .nav {
-  //   display: inline-block;
-  //   list-style: square;
-  //   padding: $font-size-standard;
-  // }
-}
-
-@media (min-width: $device-laptop) {
-  #wrapper {
-    width: $wrapper-laptop;
-  }
-  #phone{
-    display: none;
-  }
-  #tablet {
-    display: none;
-  }
-  #laptop{
-    display: block;
-  }
-}
+// @media (min-width: $device-phone) {
+//   #wrapper {
+//     width: $wrapper-phone;
+//   }
+//   #phone {
+//     display: block;
+//   }
+// }
+//
+// @media (min-width: $device-tablet) {
+//   #wrapper {
+//     width: $wrapper-tablet;
+//   }
+//   #phone{
+//     display: none;
+//   }
+//   #tablet {
+//     display: block;
+//   }
+//   // .nav {
+//   //   display: inline-block;
+//   //   list-style: square;
+//   //   padding: $font-size-standard;
+//   // }
+// }
+//
+// @media (min-width: $device-laptop) {
+//   #wrapper {
+//     width: $wrapper-laptop;
+//   }
+//   #phone{
+//     display: none;
+//   }
+//   #tablet {
+//     display: none;
+//   }
+//   #laptop{
+//     display: block;
+//   }
+// }
 
 
 
@@ -161,17 +160,21 @@ header {
 .honeycombs{
 	position: relative;
 	overflow: hidden;
-	width: 100%;
+	width: 80%;
 	text-align: center;
   background-color: $background-color;
-  margin-top: $font-size-nav
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: $font-size-logo;
+
 }
 
 .honeycombs .inner_span{
 	display: block;
 	height: 100%;
 	width: 100%;
-	background-color: $cherry;
+	background-color: $citron;
 	font-family: 'Oswald', sans-serif;
 	color: $header-color;
 }
@@ -237,6 +240,47 @@ header {
 
 	cursor: pointer;
 
+}
+
+
+
+//notched border
+
+.notched-box {
+  position: relative;
+  width: 100%;
+  height: 0px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  background-color: $background-color;
+  overflow: hidden;
+}
+
+.notched-box:before,
+.notched-box:after {
+	content:'';
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	height: 0;
+	width: 50%;
+	border-bottom: 1.5em solid $cherry;
+	box-sizing: border-box;
+}
+
+.notched-box:before {
+	left: 0;
+	border-right: 2em solid transparent;
+}
+
+.notched-box:after {
+	right:0;
+	border-left: 2em solid transparent;
+}
+
+#about {
+  background-color: $cherry;
+  height: 200px;
 }
 
 
