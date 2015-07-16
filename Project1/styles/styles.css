@@ -1,6 +1,6 @@
 body {
   font-size: 18px;
-  background: whitesmoke; }
+  color: #646464; }
 
 h1 {
   font-family: 'Oswald', sans-serif;
@@ -10,51 +10,72 @@ h1 {
 
 h2 {
   font-family: 'Oswald', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 300;
   color: black; }
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: black; }
+
+#wrapper {
+  background-color: whitesmoke;
+  width: 95%;
+  margin: auto;
+  padding: 1rem; }
+
+#navLeft {
+  position: relative;
+  float: left;
+  display: inline-block; }
+
+#navRight {
+  position: relative;
+  float: right;
+  display: inline-block; }
+
+.navLink {
+  display: inline-block;
+  margin: .5rem;
+  border-bottom: 2px solid black; }
+
+#logoContain {
+  display: inline-flex;
+  margin: 0 auto;
+  text-align: center; }
 
 .logo {
   font-family: 'Oswald', sans-serif;
   font-size: 6rem;
   font-weight: 400;
-  color: black; }
+  color: black;
+  display: inline-block;
+  margin: 0 auto; }
 
-.nav {
-  border-bottom: 2px solid black; }
-
-.navLink {
-  display: inline-block; }
-
-#wrapper {
-  width: 85%;
-  margin: auto;
-  background: whitesmoke;
-  padding: 1rem; }
+#logoName {
+  display: inline-block;
+  margin: 0 auto; }
 
 @media (min-width: 320px) {
   #wrapper {
-    width: 85%; }
+    width: 95%; }
 
   #phone {
     display: block; } }
 @media (min-width: 700px) {
   #wrapper {
-    width: 90%; }
+    width: 95%; }
 
   #phone {
     display: none; }
 
   #tablet {
-    display: block; }
-
-  .nav- {
-    display: inline-block;
-    list-style: square;
-    padding: 1rem; } }
-@media (min-width: 1200px) {
+    display: block; } }
+@media (min-width: 960px) {
   #wrapper {
-    width: 1100px; }
+    width: 95%; }
 
   #phone {
     display: none; }
@@ -64,43 +85,12 @@ h2 {
 
   #laptop {
     display: block; } }
-h1 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  line-height: 50%;
-  font-size: 60px;
-  color: black; }
-
-h2 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  line-height: 50%;
-  font-size: 40px;
-  color: black; }
-
-h3 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  line-height: 50%;
-  font-size: 30px;
-  color: black; }
-
-h4 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  line-height: 50%;
-  font-size: 20px;
-  color: black; }
-
-p {
-  font-family: 'Arvo', serif;
-  font-size: 18px; }
-
 .honeycombs {
   position: relative;
   overflow: hidden;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  background-color: whitesmoke; }
 
 .honeycombs .inner_span {
   display: block;
@@ -160,28 +150,5 @@ p {
   -o-background-size: cover;
   background-size: cover;
   cursor: pointer; }
-
-.hexagon {
-  position: relative;
-  width: 250px;
-  height: 144.34px;
-  margin: 72.17px 0; }
-
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 125px solid transparent;
-  border-right: 125px solid transparent; }
-
-.hexagon:before {
-  bottom: 100%;
-  border-bottom: 72.17px solid; }
-
-.hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 72.17px solid; }
 
 /*# sourceMappingURL=styles.css.map */
