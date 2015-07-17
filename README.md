@@ -4,9 +4,9 @@ My portfolio
 This is a portfoilio site designed around a hexagonal theme. 
 The main body of the site is a collection of different "honeycombs" that animate and reorder continuously
 based on the size of the screen. The shapes were built in css and manipulated using jquery, and the success
-of this functionality comes in large part from this plug in: http://www.jqueryscript.net/layout/jQuery-Plugin-For-Responsive-Hexagon-Grid-Layout-Honeycombs.html
+of this functionality comes in large part from this plugin: http://www.jqueryscript.net/layout/jQuery-Plugin-For-Responsive-Hexagon-Grid-Layout-Honeycombs.html
 
-The photos ($copyKate Shirley) and artwork (All in public collections at the Art Institute of Chicago) will be 
+The photos (&copyKate Shirley) and artwork (All in public collections at the Art Institute of Chicago) will be 
 updated with photos of individual projects, and the site will eventually link to project pages. 
 
 The site has two responsive breakpoints (though the honeycombs are responsive at any viewport size) at 900 and 500. 
