@@ -12,9 +12,17 @@ $(document).ready(function(event){
   }, 700,'swing');
   return false;
 });
+
 $('.loading').hide();
 $('.success').hide();
 $('.error').hide();
+
+$('#form_send').on('click', function() {
+  var formdata = app.createFormObject();
+  console.log('formdata');
+  console.log('Clicked form submit...');
+  app.sendEmail(formdata);
+});
 });
 
 
@@ -178,12 +186,7 @@ $('.error').hide();
 
 
   //contact submit event handler
-  $('#form_send').on('click', function() {
-    var formdata = app.createFormObject();
-    console.log('formdata');
-    console.log('Clicked form submit...');
-    app.sendEmail(formdata);
-});
+
 // });
 
 

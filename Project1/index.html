@@ -19,7 +19,7 @@
 
     <div id="wrapper">
 
-      <header>
+      <header class="clearfix">
 
           <div id="logoContain">
             <h1 id="logo">Kate M. Shirley</h1>
@@ -59,7 +59,7 @@
           </div>
 
           <div class="comb mouse">
-          <img src="http://i.imgur.com/aD2gzwO.jpg"" />
+          <img src="http://i.imgur.com/aD2gzwO.jpg" />
           <span><a href="pages/portfolio.html">Client Project</a></span>
           </div>
 
@@ -163,20 +163,20 @@
             <section id="contact">
               <h3>Contact Me!</h3>
 
-              <input type="text" id="user_name" placeholder="Grace Hopper"><br>
-              <input type="email" id="user_email" placeholder="grace@gmail.com"><br>
-              <input type="text" id="user_request" placeholder="What should we discuss?"><br>
+              <label for="user_name"><h4>Name:</h4></label><input type="text" id="user_name" placeholder="Grace Hopper"><br>
+              <label for="user_email"><h4>Email:</h4></label><input type="email" id="user_email" placeholder="grace@gmail.com"><br>
+              <label for="user_request"><h4>Message:</h4></label><input type="text" id="user_request" placeholder="What should we discuss?"><br><br>
               <input type="submit" id="form_send" value="Send!">
 
               <div class="loading">
-                <img src="498.gif"></img>
+                <h3>Loading...</h3>
                 </div>
 
               <div class="success">
-                <h2>Youre message was sent!</h2>
+                <h2>Your message was sent!</h2>
               </div>
               <div class="error">
-                <h2>Your message failed to send...</h2>
+                <h2>Your message failed to send...contact me at Kate.m.shirley@gmail.com</h2>
               </div>
             </section>
             <section id="follow">
