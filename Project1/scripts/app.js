@@ -4,7 +4,17 @@ $(document).ready(function(event){
   $('.honeycombs').honeycombs({
       combWidth: 180,
       margin: 10
+      });
+
+  $('a').click(function(){
+  $('html, body').animate({
+      scrollTop: $($(this).attr('href') ).offset().top
+  }, 700,'swing');
+  return false;
 });
+$('.loading').hide();
+$('.success').hide();
+$('.error').hide();
 });
 
 
@@ -19,8 +29,8 @@ $(document).ready(function(event){
 
           // Establish our default settings
           var settings = $.extend({
-              combWidth: 250,
-              margin: 15,
+              combWidth: 180,
+              margin: 0,
           }, options);
 
           function initialise(element) {
@@ -161,101 +171,82 @@ $(document).ready(function(event){
 
 //End Honeycomb
 
+//Ajx Calls
+
+  //hide status messages
 
 
-//Ajax Practice
-var app=app || {};
-app.getRequest = {
-  type: 'get',
-  url: 'https://api.twitter.com/1.1/statuses/user_timeline.json?status=test&in_reply_to=cs480test2&oauth_version=1.0&oauth_nonce=a73afdcceeb493853581e64f5801c951&oauth_timestamp=1411668337&oauth_consumer_key=lr7QWBCgG3YFzeSp0nMwPTATB&oauth_token=3330109984-HVE8nBnnKgyaKp5gjYpz1zfcIvR3iuksPzsTpQA&oauth_signature_method=HMAC-SHA1&oauth_signature=sd%2FkG89XLjyNCbcYDqgqG6gkIH0%3D&screen_name=ShirleyIsSaying&count=1',
-  //url: 'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=ShirleyIsSaying&count=1',
-  dataType: 'jsonp',
-  // data: {
-  //   screen_name: 'ShirleyIsSaying',
-  //   count: 1,
-  // },
-  success: function(data) {
-    console.log(data);
-  },
-  error: function(error) {
-    console.log(error);
-  }
+
+  //contact submit event handler
+  $('#form_send').on('click', function() {
+    var formdata = app.createFormObject();
+    console.log('formdata');
+    console.log('Clicked form submit...');
+    app.sendEmail(formdata);
+});
+// });
+
+
+var app = app || {};
+app.createFormObject = function() {
+
+  var retJson = {};
+
+  retJson.userName = $('#user_name').val();
+  retJson.userEmail = $('#user_email').val();
+  retJson.request = $('#user_request').val();
+  console.log('workd');
+
+  return retJson;
+
 };
 
-$.ajax(app.getRequest);
+app.sendEmail = function(emailData){
+  //display loading info....
+  $('.loading').slideDown();
+  //hide old messages...because this is a NEW request
+  $('.success').hide();
+  $('.error').hide();
+  //create ajax argument
+    var ajaxData = {
+      url: 'http://imperialholonet.herokuapp.com/api/mail',
+      type: 'POST',
+      data: emailData,
+      success: function(data) {
+        console.log(data);
+        $('.loading').slideUp();
+        $('.success').show();
+      },
+      error: function(err) {
+        console.log(err);
+        $('.loading').slideUp();
+        $('.error').show();
+      }
+    };
 
-$.getJSON
+  $.ajax(ajaxData);
+};
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Ajx Calls
-//
-//   //hide status messages
-//   $('.loading').hide();
-//   $('.success').hide();
-//   $('.error').hide();
-//
-//
-//   //contact submit event handler
-//   $('#form_send').on('click', function() {
-//     var formdata = app.createFormObject();
-//     console.log('formdata');
-//     console.log('Clicked form submit...');
-//     app.sendEmail(formdata);
-// });
-// });
-//
-//
-// var app = app || {};
-// app.createFormObject = function() {
-//
-//   var retJson = {};
-//
-//   retJson.userName = $('#user_name').val();
-//   retJson.userEmail = $('#user_email').val();
-//   retJson.request = $('#user_request').val();
-//   console.log('workd');
-//
-//   return retJson;
-//
+// //Ajax Practice
+// var app=app || {};
+// app.getRequest = {
+//   type: 'get',
+//   url: 'https://api.twitter.com/1.1/statuses/user_timeline.json?status=test&in_reply_to=cs480test2&oauth_version=1.0&oauth_nonce=a73afdcceeb493853581e64f5801c951&oauth_timestamp=1411668337&oauth_consumer_key=lr7QWBCgG3YFzeSp0nMwPTATB&oauth_token=3330109984-HVE8nBnnKgyaKp5gjYpz1zfcIvR3iuksPzsTpQA&oauth_signature_method=HMAC-SHA1&oauth_signature=sd%2FkG89XLjyNCbcYDqgqG6gkIH0%3D&screen_name=ShirleyIsSaying&count=1',
+//   //url: 'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=ShirleyIsSaying&count=1',
+//   dataType: 'jsonp',
+//   // data: {
+//   //   screen_name: 'ShirleyIsSaying',
+//   //   count: 1,
+//   // },
+//   success: function(data) {
+//     console.log(data);
+//   },
+//   error: function(error) {
+//     console.log(error);
+//   }
 // };
 //
-// app.sendEmail = function(emailData){
-//   //display loading info....
-//   $('.loading').slideDown();
-//   //hide old messages...because this is a NEW request
-//   $('.success').hide();
-//   $('.error').hide();
-//   //create ajax argument
-//     var ajaxData = {
-//       url: 'http://imperialholonet.herokuapp.com/api/mail',
-//       type: 'POST',
-//       data: emailData,
-//       success: function(data) {
-//         console.log(data);
-//         $('.loading').slideUp();
-//         $('.success').show();
-//       },
-//       error: function(err) {
-//         console.log(err);
-//         $('.loading').slideUp();
-//         $('.error').show();
-//       }
-//     };
+// $.ajax(app.getRequest);
 //
-//   $.ajax(ajaxData);
-// };
+// $.getJSON

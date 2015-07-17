@@ -7,7 +7,7 @@ h1 {
   font-size: 4rem;
   font-weight: 400;
   color: black;
-  line-height: 50%; }
+  line-height: 30%; }
 
 h2 {
   font-family: 'Oswald', sans-serif;
@@ -30,45 +30,130 @@ a {
   margin: auto; }
 
 header {
-  position: relative;
-  margin: 0, auto; }
-
-#navLeft {
-  position: relative;
-  float: left;
-  display: inline-block; }
-
-#navRight {
-  position: relative;
-  float: right;
-  display: inline-block; }
-
-.navLink {
-  display: inline-block;
-  margin: .5rem;
-  border-bottom: 2px solid black; }
+  padding: 1rem;
+  margin-bottom: 2rem; }
 
 #logoContain {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto; }
+  position: relative;
+  float: left;
+  display: inline; }
 
-.logo {
-  font-family: 'Oswald', sans-serif;
-  font-size: 6rem;
-  font-weight: 400;
-  color: black;
+#navRight .nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: right; }
+
+li {
   display: inline-block;
-  margin: 0 auto; }
+  margin: .5rem; }
+
+#bottom {
+  background-color: #ff231d; }
 
 #about {
   background-color: #ff231d;
-  width: 95%;
-  padding: 1rem; }
+  padding-left: 2rem;
+  padding-top: 1rem; }
 
 #bio {
   font-family: 'Arvo', serif;
-  color: white; }
+  color: white;
+  padding: 2rem; }
+
+footer {
+  background-color: #7deee6;
+  padding-left: 2rem;
+  padding-top: 1rem; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+input {
+  width: 100%; }
+
+#contact {
+  float: left;
+  width: 50%;
+  margin: 1rem; }
+
+#follow {
+  float: right; }
+
+#end {
+  background-color: #646464;
+  color: #c0c3ba; }
+
+.notched-about {
+  position: relative;
+  width: 100%;
+  height: 0px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  background-color: whitesmoke;
+  overflow: hidden; }
+
+.notched-about:before,
+.notched-about:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  height: 0;
+  width: 50%;
+  border-bottom: 1.5em solid #ff231d;
+  box-sizing: border-box; }
+
+.notched-about:before {
+  left: 0;
+  border-right: 2em solid transparent; }
+
+.notched-about:after {
+  right: 0;
+  border-left: 2em solid transparent; }
+
+.notched-contact {
+  position: relative;
+  width: 100%;
+  height: 0px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  background-color: #ff231d;
+  overflow: hidden; }
+
+.notched-contact:before,
+.notched-contact:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  height: 0;
+  width: 50%;
+  border-bottom: 1.5em solid #7deee6;
+  box-sizing: border-box; }
+
+.notched-contact:before {
+  left: 0;
+  border-right: 2em solid transparent; }
+
+.notched-contact:after {
+  right: 0;
+  border-left: 2em solid transparent; }
 
 .honeycombs {
   position: relative;
@@ -78,7 +163,7 @@ header {
   background-color: whitesmoke;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3rem;
+  margin-top: 10rem;
   margin-bottom: 6rem; }
 
 .honeycombs .inner_span {
@@ -140,32 +225,23 @@ header {
   background-size: cover;
   cursor: pointer; }
 
-.notched-box {
-  position: relative;
-  width: 100%;
-  height: 0px;
-  margin: 0 auto;
-  padding: 1rem 0;
-  background-color: whitesmoke;
-  overflow: hidden; }
+@media (max-width: 500px) {
+  #logo {
+    font-size: 4rem; }
 
-.notched-box:before,
-.notched-box:after {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  height: 0;
-  width: 50%;
-  border-bottom: 1.5em solid #ff231d;
-  box-sizing: border-box; }
+  li {
+    display: block;
+    margin: .5rem; }
 
-.notched-box:before {
-  left: 0;
-  border-right: 2em solid transparent; }
+  #navRight {
+    clear: left; }
 
-.notched-box:after {
-  right: 0;
-  border-left: 2em solid transparent; }
+  #navRight .nav {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    list-style-type: none;
+    float: none;
+    clear: both; } }
 
 /*# sourceMappingURL=styles.css.map */

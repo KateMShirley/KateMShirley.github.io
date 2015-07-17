@@ -1,6 +1,6 @@
 @import 'variables.scss';
 
-//STANDARDS
+/////////////////////STANDARDS//////////////////////////
 
 body {
   font-size: $base-page-size;
@@ -12,14 +12,16 @@ h1 {
   font-size: $font-size-headline;
   font-weight: 400;
   color: $header-color;
-  line-height: 50%;
+  line-height: 30%;
+
 }
 
 h2 {
   font-family: 'Oswald', sans-serif;
   font-size: $font-size-nav;
   font-weight: 300;
-  color: $header-color
+  color: $header-color;
+
 }
 
 h3 {
@@ -38,137 +40,153 @@ a {
   width: $wrapper-phone;
   margin: auto;}
 
+
+//////////////////////header and nav styling////////////////////////
+
 header {
-  position: relative;
-  margin: 0, auto;
+  padding: $font-size-standard;
+  margin-bottom: $font-size-nav;
 }
 
-//Nav Styling
-
-#navLeft{
+#logoContain {
   position: relative;
-  float:left;
-  display: inline-block;
+  float: left;
+  display: inline;
+}
+#navRight .nav {
+  margin:0;
+  padding:0;
+  list-style-type: none;
+  float:right;
 }
 
-#navRight{
-  position: relative;
-  float: right;
-  display: inline-block;
-}
-.navLink {
+li {
   display: inline-block;
   margin: .5rem;
-  border-bottom: 2px solid black;
 }
 
-
-//Logo Styling
-
-#logoContain{
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-
+/////////////////////////About Me Content////////////////////////////////
+#bottom {
+background-color: $cherry;
 }
 
-.logo {
-  font-family: 'Oswald', sans-serif;
-  font-size: $font-size-logo;
-  font-weight: 400;
-  color: $header-color;
-  display:inline-block;
-  margin: 0 auto;
-}
 #about {
   background-color: $cherry;
-  width:$wrapper-phone;
-  padding: $font-size-standard;
+  padding-left: $font-size-nav;
+  padding-top: $font-size-standard;
 }
 #bio {
   font-family: 'Arvo', serif;
   color: white;
+  padding: $font-size-nav;
 }
-// #logoName {
-//   display: inline-block;
-//   margin-left
 
+//////////////////////Footer Content///////////////////////////////
+footer{
+  background-color: $turq;
+  padding-left: $font-size-nav;
+  padding-top: $font-size-standard;
+}
 
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
 
+input {
+width: 100%;
+}
 
+#contact{
+  float: left;
+  width: 50%;
+  margin: $font-size-standard;
 
+}
+#follow{
+  float: right;
+}
 
-//Honeycombs with color
+#end{
+  background-color: $body-text;
+  color: $grey;
+}
 
+////////////////////////notched borders//////////////////////////
 
+.notched-about {
+  position: relative;
+  width: 100%;
+  height: 0px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  background-color: $background-color;
+  overflow: hidden;
+}
 
-// .nav {
-//   display: inline-block;
-// }
+.notched-about:before,
+.notched-about:after {
+	content:'';
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	height: 0;
+	width: 50%;
+	border-bottom: 1.5em solid $cherry;
+	box-sizing: border-box;
+}
 
+.notched-about:before {
+	left: 0;
+	border-right: 2em solid transparent;
+}
 
+.notched-about:after {
+	right:0;
+	border-left: 2em solid transparent;
+}
 
-// //display
-// #phone {
-//   display: none;
-//   background: purple;
-// }
-//
-// #tablet {
-//   display: none;
-//   background: orange;
-// }
-// #laptop {
-//   display: none;
-//   background: lime;
-// }
+.notched-contact {
+  position: relative;
+  width: 100%;
+  height: 0px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  background-color: $cherry;
+  overflow: hidden;
+}
 
-//media queries for resposive design
-// @media (min-width: $device-phone) {
-//   #wrapper {
-//     width: $wrapper-phone;
-//   }
-//   #phone {
-//     display: block;
-//   }
-// }
-//
-// @media (min-width: $device-tablet) {
-//   #wrapper {
-//     width: $wrapper-tablet;
-//   }
-//   #phone{
-//     display: none;
-//   }
-//   #tablet {
-//     display: block;
-//   }
-//   // .nav {
-//   //   display: inline-block;
-//   //   list-style: square;
-//   //   padding: $font-size-standard;
-//   // }
-// }
-//
-// @media (min-width: $device-laptop) {
-//   #wrapper {
-//     width: $wrapper-laptop;
-//   }
-//   #phone{
-//     display: none;
-//   }
-//   #tablet {
-//     display: none;
-//   }
-//   #laptop{
-//     display: block;
-//   }
-// }
+.notched-contact:before,
+.notched-contact:after {
+	content:'';
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	height: 0;
+	width: 50%;
+	border-bottom: 1.5em solid $turq;
+	box-sizing: border-box;
+}
 
+.notched-contact:before {
+	left: 0;
+	border-right: 2em solid transparent;
+}
 
+.notched-contact:after {
+	right:0;
+	border-left: 2em solid transparent;
+}
 
-
-//honeycombs
+///////////////////////////////HONEYCOMBS, YO /////////////////////////////
 
 .honeycombs{
 	position: relative;
@@ -178,7 +196,7 @@ header {
   background-color: $background-color;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3rem;
+  margin-top: 10rem;
   margin-bottom: $font-size-logo;
 
 }
@@ -257,113 +275,28 @@ header {
 
 
 
-//notched border
 
-.notched-box {
-  position: relative;
-  width: 100%;
-  height: 0px;
-  margin: 0 auto;
-  padding: 1rem 0;
-  background-color: $background-color;
-  overflow: hidden;
-}
+///////////////////media queries for resposive design////////////////
+ @media (max-width: $device-phone) {
+   #logo{
+     font-size: 4rem;
+   }
 
-.notched-box:before,
-.notched-box:after {
-	content:'';
-	position: absolute;
-	z-index: 1;
-	bottom: 0;
-	height: 0;
-	width: 50%;
-	border-bottom: 1.5em solid $cherry;
-	box-sizing: border-box;
-}
+   li {
+     display: block;
+     margin: .5rem;
+   }
 
-.notched-box:before {
-	left: 0;
-	border-right: 2em solid transparent;
-}
+   #navRight {
+     clear:left;
+   }
 
-.notched-box:after {
-	right:0;
-	border-left: 2em solid transparent;
-}
-
-
-
-
-// .hexagon {
-//   position: relative;
-//   width: 250px;
-//   height: 144.34px;
-//   margin: 72.17px 0;
-// }
-//
-// .hexagon:before,
-// .hexagon:after {
-//   content: "";
-//   position: absolute;
-//   width: 0;
-//   border-left: 125px solid transparent;
-//   border-right: 125px solid transparent;
-// }
-//
-// .hexagon:before {
-//   bottom: 100%;
-//   border-bottom: 72.17px solid;
-// }
-//
-// .hexagon:after {
-//   top: 100%;
-//   width: 0;
-//   border-top: 72.17px solid;
-// }
-
-// #citron {
-//   background-color: rgba(231,253,29,1);
-//   margin-right: 30px;
-//   float: left;
-//   margin-right: 30px;
-// }
-// #citron:before {
-//   border-bottom: 72.17px solid rgba(231,253,29,1);
-// }
-// #citron:after {
-//   border-top: 72.17px solid rgba(231,253,29,1);
-// }
-//
-// #cherry {
-//   background-color: rgba(255,35,29,1);
-//   float: left;
-//   margin-right: 30px;
-// }
-// #cherry:before {
-//   border-bottom: 72.17px solid rgba(255,35,29,1);
-// }
-// #cherry:after {
-//   border-top: 72.17px solid rgba(255,35,29,1);
-// }
-// #turquoise {
-//   background-color: rgba(125,238,230,1);
-//   float:left;
-//   margin-right: 30px;
-// }
-// #turquoise:before {
-//   border-bottom: 72.17px solid rgba(125,238,230,1);
-// }
-// #turquoise:after {
-//   border-top: 72.17px solid rgba(125,238,230,1);
-// }
-// #grey {
-//   background-color: rgba(192,195,186,1);
-//   float:left;
-//   margin-right: 30px;
-// }
-// #grey:before {
-//   border-bottom: 72.17px solid rgba(192,195,186,1);
-// }
-// #grey:after {
-//   border-top: 72.17px solid rgba(192,195,186,1);
-// }
+   #navRight .nav {
+     margin:0;
+     padding:0;
+     display: inline-block;
+     list-style-type: none;
+     float:none;
+     clear: both;
+   }
+ }
