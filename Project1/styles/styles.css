@@ -73,6 +73,11 @@ footer {
   padding-left: 2rem;
   padding-top: 1rem; }
 
+  input {
+    padding: 4%;
+    border-radius: 6px;
+  }
+
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -96,9 +101,10 @@ input {
   height: 1.5rem; }
 
 #contact {
-  float: left;
+  display: block;
   width: 50%;
-  margin: 1rem; }
+  margin: 0 auto; 
+}
 
 #follow {
   float: right; }
