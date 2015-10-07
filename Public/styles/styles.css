@@ -54,7 +54,22 @@ h4 {
   color: #646464; }
 
 a {
-  color: black; }
+  color: black;
+
+ }
+
+ a:hover {
+    text-decoration: none;
+}
+
+
+ .project {
+   font-family: 'Oswald', sans-serif;
+   font-size: 3rem;
+   font-weight: 300;
+   margin-top: -1%;
+   color: black;
+ }
 
 .container {
   width: 95%;
@@ -154,11 +169,11 @@ footer {
   height: 1.5rem; }*/
 
 
-#contact {
+/*#contact {
   display: block;
   width: 50%;
   margin: 0 auto;
-}
+}*/
 
 #follow {
   float: right; }
@@ -240,11 +255,13 @@ footer {
   width: 100%;
   background-color: #e7fd1d;
   font-family: 'Oswald', sans-serif;
-  size: 2rem;
+  size: 200%;
   color: black; }
 
 .honeycombs .inner-text {
-  padding-top: 30%; }
+  padding-top: 30%;
+  size: 4rem;
+ }
 
 .honeycombs .honeycombs-inner-wrapper {
   display: inline-block;
