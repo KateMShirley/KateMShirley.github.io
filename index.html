@@ -36,14 +36,14 @@
         </div>
       </div>
 
-          <div class = "row">
+          <!-- <div class = "row">
             <ul class="nav">
               <li class="navLink"><h2><a href="#">Home</a></h2></li>
               <li class="navLink"><h2><a href="#about">About</a></h2></li>
               <li class="navLink"><h2><a href="https://www.github.com/katemshirley">Github</a></h2></li>
               <li class="navLink"><h2><a href="#contact">Contact</a></h2></li>
             </ul>
-          </div>
+          </div> -->
 
       </header>
 
@@ -53,11 +53,12 @@
 
           <div class="comb color">
           <img src= "http://i.imgur.com/hjeAGwT.jpg">
+
           </div>
 
           <div class="comb mouse">
           <img src= "http://i.imgur.com/MoALDuE.jpg">
-          <span><a href="http://www.alemanac.xyz">Project 2</a></span>
+          <span><a href="http://www.alemanac.xyz" target="_blank">Project 2</a></span>
           </div>
 
           <div class="comb mouse">
@@ -74,12 +75,12 @@
           <span><a href="pages/portfolio.html">Client Project</a></span>
           </div>
 
-          <div class="comb mouse">
+          <!-- <div class="comb mouse">
           <img src="http://i.imgur.com/uP8NJ0u.jpg" />
           <span><a href="pages/portfolio.html">Client Project</a></span>
-          </div>
+          </div> -->
 
-      <div class="comb color">
+      <!-- <div class="comb color">
           <img src="http://i.imgur.com/lCD29l5.jpg" />
           </div>
 
@@ -90,7 +91,7 @@
           <div class="comb mouse">
           <img src="http://i.imgur.com/W8Zi9LC.jpg" />
           <span><a href="https://medium.com/@ShirleyIsSaying"> Read My Blog</a></span>
-          </div>
+          </div> -->
     <!--
           <div class="comb mouse">
           <img src="http://i.imgur.com/atd3kgQ.jpg" />
@@ -155,29 +156,36 @@
 
       <div class="notched-about">
       </div>
-
-        <div id="about">
-            <h1>About</h1>
-            <p id="bio">Street art DIY direct trade, lo-fi umami Intelligentsia photo booth gastropub.
-              Paleo pickled Helvetica, American Apparel brunch semiotics salvia occupy messenger bag Schlitz.
-              Vice pug literally, chillwave health goth mustache Brooklyn. PBR master cleanse viral biodiesel.
-              Austin farm-to-table vegan hashtag, fingerstache ennui freegan. 90's art party cray pop-up 8-bit
-              Blue Bottle Marfa. Brunch squid fingerstache, American Apparel banh mi 8-bit pop-up letterpress
-              lumbersexual dreamcatcher Blue Bottle Wes Anderson Banksy whatever skateboard. <a href="https://medium.com/@ShirleyIsSaying">Follow my blog</a> for
-              updates on current projects.
+      <div id="about">
+        <div class="row">
+            <h1 class="abouthead">About Me</h1>
           </div>
+          <div class = "row">
+            <div class = "col-md-10 col-md-offset-1">
+            <p id="bio">I'm a former commuications professional turned web developer by way of General Assembly. After working for a digital marketing agency and a youth-mentoring nonprofit I fell in love with the creative aspects of coding. I completed General Assembly's Web Development Immersive program, a 12-week class designed to ramp up full-stack development skills quickly. I completed several projects throughout my course including a quote generator, beer tasting journal, and an app to gamify volunteering. I am actively looking for a junior developer role in Chicago where I can continue to build upon this new foundation of skills and contribute to a collaboarative team. Check out my github for recent projects or contact me below with any questions! I look forward to connecting.
+          </div>
+        </div>
+      </div>
 
           <div class="notched-contact">
           </div>
 
-          <footer class='clearfix'>
-            <section id="contact">
-              <h1>Contact Me!</h1>
+          <footer>
+            <div class = "row">
+              <h1 class="abouthead">Contact Me!</h1>
+            <div class = "col-md-8 col-md-offset-2">
 
-              <label for="user_name"><h4>Name:</h4></label><input type="text" id="user_name" placeholder="Grace Hopper"><br>
-              <label for="user_email"><h4>Email:</h4></label><input type="email" id="user_email" placeholder="grace@gmail.com"><br>
-              <label for="user_request"><h4>Message:</h4></label><input type="text" id="user_request" placeholder="What should we discuss?"><br><br>
-              <button type="submit" id="form_send">SEND</button>
+              <form>
+              <div class = "form-group">
+              <label for="user_name"><h4>Name:</h4></label><input type="text" class ="form-control frm" id="user_name" placeholder="Grace Hopper">
+            </div>
+              <div class = "form-group">
+              <label for="user_email"><h4>Email:</h4></label><input type="email" id="user_email" class ="form-control frm" placeholder="grace@gmail.com">
+            </div>
+              <div class = "form-group">
+              <label for="user_request"><h4>Message:</h4></label><input type="textarea" id="user_request" class ="form-control frm" placeholder="What should we discuss?">
+            </div>
+
 
               <div class="loading">
                 <h3>Loading...</h3>
@@ -189,7 +197,14 @@
               <div class="error">
                 <h2>Your message failed to send...contact me at Kate.m.shirley@gmail.com</h2>
               </div>
-            </section>
+            </div>
+            <div class = "col-md-4 col-md-offset-4">
+              <button type="submit" class = "btn btn-default btn-lg btn-block" id="form_send"><h4>SEND</h4></button>
+            </form>
+          </div>
+        </div>
+
+
             <!-- <div id="end">
              &copyPhotos, Design, and Development by Kate Shirley
             </div> -->

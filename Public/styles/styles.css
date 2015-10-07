@@ -22,6 +22,17 @@ body {
   /*line-height: 30%;*/
   /*text-align: center;*/
 }
+.abouthead {
+  font-family: 'Oswald', sans-serif;
+  font-size: 6rem;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+  /*margin-top: -9%;*/
+  margin-left: -3%;*/
+  /*line-height: 30%;*/
+  /*text-align: center;*/
+}
 
 h2 {
   font-family: 'Oswald', sans-serif;
@@ -37,7 +48,7 @@ h3 {
 
 h4 {
   font-family: 'Oswald', sans-serif;
-  font-size: 1rem;
+  font-size: 2.5rem;
   font-weight: 400;
   line-height: 50%;
   color: #646464; }
@@ -94,18 +105,31 @@ li {
 
 #bio {
   font-family: 'Arvo', serif;
-  color: white;
-  padding: 2rem; }
+  color: whitesmoke;
+  padding: 2rem;
+  margin-bottom: 5%;
+  line-height: 150%;
+}
 
 footer {
   background-color: #7deee6;
   padding-left: 2rem;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+ }
+
+ /*.btn {
+   width: 40%;
+ }*/
 
   input {
     padding: 4%;
     border-radius: 6px;
   }
+
+  /*.frm {
+    width: 40%;
+  }*/
 
 .clearfix:after {
   visibility: hidden;
@@ -125,9 +149,9 @@ footer {
 .clearfix {
   display: block; }
 
-input {
+/*input {
   width: 100%;
-  height: 1.5rem; }
+  height: 1.5rem; }*/
 
 
 #contact {
