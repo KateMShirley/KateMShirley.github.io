@@ -2,12 +2,14 @@ body {
   font-size: 18px;
   color: #646464; }
 
-h1 {
+#logo {
   font-family: 'Oswald', sans-serif;
-  font-size: 4rem;
+  font-size: 7rem;
   font-weight: 400;
   color: black;
-  line-height: 30%; }
+  line-height: 30%;
+  text-align: center;
+}
 
 h2 {
   font-family: 'Oswald', sans-serif;
@@ -31,13 +33,19 @@ h4 {
 a {
   color: black; }
 
+.container {
+  width: 95%;
+}
+
 #wrapper {
   background-color: whitesmoke;
-  width: 95%;
-  margin: auto; }
+  /*width: 95%;
+  margin: auto; */
+}
 
 header {
   padding: 1rem;
+  margin-top: 2rem;
   margin-bottom: 2rem; }
 
 #logoContain {
@@ -103,7 +111,7 @@ input {
 #contact {
   display: block;
   width: 50%;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 #follow {

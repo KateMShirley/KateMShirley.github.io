@@ -2,7 +2,7 @@
 $(document).ready(function(event){
   console.log("all things are loaded...thanks, yayQuery!");
   $('.honeycombs').honeycombs({
-      combWidth: 180,
+      combWidth: 250,
       margin: 10
       });
 
@@ -37,7 +37,7 @@ $('#form_send').on('click', function() {
 
           // Establish our default settings
           var settings = $.extend({
-              combWidth: 180,
+              combWidth: 250,
               margin: 0,
           }, options);
 
@@ -106,7 +106,7 @@ $('#form_send').on('click', function() {
                   updateScales();
                   width = $(element).width();
 
-                  newWidth = ( num / 1.5) * settings.combWidth;
+                  newWidth = ( num / .5) * settings.combWidth;
 
                   if(newWidth < width){
                       width = newWidth;
